@@ -1,0 +1,280 @@
+/* Start Varaibles */
+:root {
+    --mainColor: #fff;
+    --mainBackGround: #eee;
+    --mainPadding: 3rem;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.main-title {
+    margin: 1.5rem 0rem;
+    font-size: 3rem;
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+header nav a img{
+    width: 7rem;
+} 
+header nav button {
+    padding: 0.3rem 1.3rem;
+    background-color: transparent;
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+    font-size: 0.8rem;
+}
+header .banner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--mainColor);
+}
+header .banner h2 {
+    font-size: 3.5rem;
+}
+header .banner form {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    background-color: var(--mainColor);
+}
+header .banner form input {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+header .banner form input::placeholder {
+    font-size: 0.9rem;
+}
+header .banner form input:focus {
+    box-shadow: none;
+    outline: none;
+}
+header .banner form input[type="submit"] {
+    font-size: 0.9rem;
+    color: var(--mainColor);
+    background-image: linear-gradient(to bottom, #00ff7e, #1f3d90);
+    padding: 0.5rem 1.5rem;
+    margin-right: 0.1rem;
+}
+@media(max-width: 767px) {
+    header .banner form {
+        width: 22rem;
+    }
+}
+/* End Header */
+/* Start Features Section */
+.features {
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.features .card {
+    border: none;
+    border-radius: 0rem;
+    box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.4);
+    margin: 1rem 0rem;
+} 
+.features .card img {
+    border-radius: 0rem;
+    cursor: pointer;
+}
+.features .card .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.features .card .price {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: #ff5722;
+    color: var(--mainColor);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1.125rem 1.125rem;
+}
+.features .card .icons {
+    background-color: var(--mainColor);
+    margin-top: -1.5rem;
+}
+.features .card .icons svg {
+    color: #ff5722;
+    font-size: 0.7rem;
+}
+.features .card .card-body h5 {
+    margin: 1rem auto 0.25rem;
+    font-weight: bold;
+}
+.features .card .card-body .content {
+    display: flex;
+    margin-top: -0.5rem;
+}
+.features .card .card-body .content .contain {
+    margin: 0rem 0.1rem;
+    font-size: 0.8rem;
+}
+.features .card .card-body .content .contain svg {
+    color: #ff5722;
+}
+/* End Features Section */
+/* Start Travel Section */
+.travell {
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    background-color: var(--mainBackGround);
+}
+.travell .img {
+    color: var(--mainColor);
+    font-size: 0.9rem;
+    position: relative;
+    margin: 0.5rem 0rem;
+}
+.travell .img img:hover {
+    transform: scale(1.04);
+}
+.travell .img img {
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.travell .img h6 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End Travel Section */
+/* Start Banner Section */
+.baner {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    height: 80%;
+    background-image: url("../imgs/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.baner .cont {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    color: var(--mainColor);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.baner .cont .left-side {
+    line-height: 1;
+}
+.baner .cont .left-side h2 {
+    font-size: 1.5rem;
+}
+.baner .cont button {
+    padding: 0.35rem 1rem;
+    background-color: transparent;
+    color: var(--mainColor);
+    font-size: 0.8rem;
+    border: 2px solid var(--mainColor);
+}
+@media(max-width: 767px) {
+    .baner .cont {
+        display: block;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+    .baner .cont button {
+        position: absolute;
+        margin-top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* End Banner Section */
+/* Start Review Section */
+.review {
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.review .box {
+    box-shadow: 0rem 0rem 1rem 0 rgba(0, 0, 0, 0.4);
+    margin: 1rem 0rem;
+    text-align: center;
+}
+.review .box svg {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #2196f3;
+}
+.review .box h6 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.review .box h6 span {
+    font-size: 0.75rem;
+    color: #777;
+    font-weight: normal;
+}
+.review .box img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    position: relative;
+    top: 1.525rem;
+}
+/* End Review Section */
+/* Start Footer */
+footer {
+    padding-top: var(--mainPadding);
+    padding-bottom: 1rem;
+    background-color: #673ab7;
+    color: var(--mainColor);
+}
+footer .follow {
+    margin: 1rem;
+}
+footer .follow img {
+    width: 7rem;
+}
+footer .follow small {
+    display: block;
+    margin: 1rem 0rem;
+}
+footer .follow ul {
+    margin: 1rem 0rem;
+}
+footer .follow ul li {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+}
+footer .follow ul li svg {
+    margin-right: 0.5rem;
+}
+footer .copyright svg {
+    color: red;
+}
+/* End Footer */
